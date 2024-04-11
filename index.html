@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KRR Catering</title>
+    <style>
+        body {
+            background: linear-gradient(orange, yellow);
+            font-family: Arial, sans-serif;
+            color: white;
+            transition: all 0.5s ease;
+        }
+        .container {
+            background: white;
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+            transition: all 0.5s ease;
+        }
+        h1 {
+            color: brown;
+            text-align: center;
+            transition: all 0.5s ease;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+        }
+        h2 {
+            color: black;
+            transition: all 0.5s ease;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+        li {
+            background-color: orange;
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            flex-basis: calc(25%); 
+            text-align: center;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            transform: scale(1);
+        }
+        li:hover {
+            background-color: darkorange;
+            transform: scale(1.05); /* Adjust this to change the size of the popup */
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        button:hover {
+            background-color: darkorange;
+            transform: scale(1.1);
+        }
+        h3, p {
+            color: black;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="krr.jpg" alt="Delicious food from KRR Catering">
+        <h2>Our Services:</h2>
+        <ul>
+            <li>Weddings</li>            <li>Engagement Event</li>
+            <li>Family Events</li>            <li>Birthday Event</li>
+            <li>Office Event</li>            <li>School Farewell</li>
+        </ul>
+        <p><strong>Non Veg Packages:</strong> Chicken Biryani and Mutton Biryani, Unlimited Kathirika, Onion Reita, Bread Halwa, Vala Elai and Water bottle - RS 600.</p>
+        <img src="nv.jpg">
+        <p><strong>Veg Packages:</strong> Customizable according to Requests</p>
+        <img src="veg.jpg">
+        <button onclick="bookingAlert()">BOOKING NOW</button>   
+        <h3>Contact Us: 9940466746</h3>
+        <p>Location: No 35, Ram Nagar kakkalur, Near CCC school, Tiruvallur 602 003.</p>
+    </div>
+    <script>
+        function bookingAlert() {
+            alert("Kindly contact 9940466746 and book your orders!!");
+        }
+    </script>
+</body>
+</html>
